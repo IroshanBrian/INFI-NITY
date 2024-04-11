@@ -1,11 +1,8 @@
-import { curve, heroBackground, background } from "../assets";
+import { curve, background } from "../assets";
 import Button from "./Button";
 import Section from "./Section";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
-import { heroIcons } from "../constants";
-import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
-import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
 
 const Hero = () => {
@@ -19,9 +16,8 @@ const Hero = () => {
       customPaddings
       id="hero"
     >
-
       <div className="container relative" ref={parallaxRef}>
-        <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
+        <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[1rem] md:mb-1 lg:mb-[1rem]">
           <h1 className="h1 mb-6 font-fugaz">
             INFI - NITY {` `}
             <span className="text-[3rem] lg:text-[4rem] sm:text-[3rem] inline-block relative font-bold italic font-scribble">
@@ -35,7 +31,13 @@ const Hero = () => {
               />
             </span>
           </h1>
-          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8"></p>
+          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
+            Last year&apos;s Get-Together was a stellar success, uniting
+            everyone beneath the starlit sky. Eager to elevate the experience
+            this year, secure your tickets now and join us for another
+            enchanting event. Don&apos;t miss out on the magic reserve your spot
+            today!
+          </p>
           <Button href="/pricing" white>
             Buy Tickets
           </Button>

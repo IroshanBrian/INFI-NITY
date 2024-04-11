@@ -1,12 +1,19 @@
-import React from 'react'
-import { bg } from '../assets'
+import { bg } from "../assets";
+import Hero from "./Hero";
 
 const Bg = () => {
-     return (
-          <div className=''>
-               <img src={bg} alt="" className="fixed opacity-20  h-[100vh] bg-cover bg-center" />
-          </div>
-     )
-}
+  return (
+    <div className="relative w-full overflow-hidden">
+      <img
+        src={bg}
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover opacity-20 z-0"
+      />
+      <div className="relative z-10">
+        <Hero />
+      </div>
+    </div>
+  );
+};
 
-export default Bg
+export default Bg;
