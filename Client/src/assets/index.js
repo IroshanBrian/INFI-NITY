@@ -25,6 +25,8 @@ import aboutimg from "./about.jpg"
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
 import heroBackground from "./hero/hero-background.jpg";
+import me from './me.jpg';
+import sarith from './sarith.jpg'
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
@@ -75,8 +77,12 @@ import facebook from "./socials/facebook.svg";
 import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
+import mern from './mern.png';
 
 export {
+  mern,
+  sarith,
+  me,
   aboutimg,
   bg,
   brainwave,
