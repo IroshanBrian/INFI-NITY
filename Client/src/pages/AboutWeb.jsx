@@ -1,12 +1,15 @@
 import ButtonGradient from "../assets/svg/ButtonGradient";
 import Header from "../components/Header";
+import { BackgroundGradientAnimation } from "../components/ui/background-gradient-animation";
 
 const AboutWeb = () => {
   return (
     <>
-      <div className="pt-[4.75rem] lg:pt-[5.25] overflow-hidden">
+      <div className="overflow-hidden">
         <Header />
-        <div>ABOUT WEB</div>
+        <BackgroundGradientAnimation>
+          <div className="absolute h-96 top-[3rem] z-49 inset-0 items-center justify-center"></div>
+        </BackgroundGradientAnimation>
       </div>
       <ButtonGradient />
     </>

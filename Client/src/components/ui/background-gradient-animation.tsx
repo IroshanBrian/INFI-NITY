@@ -3,7 +3,7 @@ import { cn } from "../../utils/cn";
 import React, { useEffect, useRef, useState } from "react";
 
 export const BackgroundGradientAnimation = ({
-  gradientBackgroundStart = "rgb(160, 21, 62)",
+  gradientBackgroundStart = "rgb(30, 3, 66)",
   gradientBackgroundEnd = "rgb(0, 0, 0)",
   firstColor = "18, 113, 255",
   secondColor = "221, 74, 255",
@@ -88,11 +88,8 @@ export const BackgroundGradientAnimation = ({
 
   return (
     <div
-      className={cn(
-        `h-[110vh] lg:h-[150vh] md:h-[155vh] w-screen relative overflow-hidden top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]`,
-        containerClassName
-      )}
-    >
+  className={`h-[150vh] w-screen z-49 absolute top-0 left-0 bg-[linear-gradient(40deg, var(--gradient-background-start), var(--gradient-background-end))] ${containerClassName} overflow-hidden`}
+>
       <svg className="hidden">
         <defs>
           <filter id="blurMe">

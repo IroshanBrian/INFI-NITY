@@ -3,10 +3,13 @@ import Hero from "./Hero";
 
 export default function BackgroundGradientAnimationDemo() {
   return (
-    <BackgroundGradientAnimation>
-      <div className="absolute h-96 top-[3rem] z-49 inset-0 items-center justify-center">
-        <Hero />
+    <>
+      <div className="z-49 inset-0 items-center justify-center">
+        <div className="pt-10">
+          <Hero />
+        </div>
+        <BackgroundGradientAnimation />
       </div>
-    </BackgroundGradientAnimation>
+    </>
   );
 }
