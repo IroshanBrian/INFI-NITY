@@ -8,7 +8,6 @@ const About = () => {
     <>
       <div className="overflow-hidden">
         <Header />
-
         <div className="absolute top-[3rem] z-40 inset-0 ">
           <div className="flex justify-center items-center h-screen">
             <div className="lg:w-[70vw] md:w-[90vw] mx-auto bg-[#0003] shadow-lg rounded-lg overflow-hidden">
