@@ -22,8 +22,6 @@ const Header = () => {
   };
 
   const handleClick = () => {
-    if (!openNavigation) return;
-
     enablePageScroll();
     setOpenNavigation(false);
   };
@@ -47,6 +45,7 @@ const Header = () => {
               <Link
                 key={item.id}
                 to={item.to}
+                onClick={handleClick} // Call handleClick when a link is clicked
                 className={`
     block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1
     ${item.onlyMobile ? "lg:hidden" : ""}

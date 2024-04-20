@@ -1,4 +1,4 @@
-import { BackgroundGradientAnimation } from "../components/ui/background-gradient-animation";
+// import { BackgroundGradientAnimation } from "../components/ui/background-gradient-animation";
 import Hero from "./Hero";
 
 export default function BackgroundGradientAnimationDemo() {
@@ -8,7 +8,7 @@ export default function BackgroundGradientAnimationDemo() {
         <div className="pt-10">
           <Hero />
         </div>
-        <BackgroundGradientAnimation />
+        {/* <BackgroundGradientAnimation /> */}
       </div>
     </>
   );
