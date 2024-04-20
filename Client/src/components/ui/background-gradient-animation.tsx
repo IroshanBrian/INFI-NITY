@@ -88,7 +88,7 @@ export const BackgroundGradientAnimation = ({
 
   return (
     <div
-  className={`h-[150vh] w-screen z-49 absolute top-0 left-0 bg-[linear-gradient(40deg, var(--gradient-background-start), var(--gradient-background-end))] ${containerClassName} overflow-hidden`}
+  className={`h-screen w-screen fixed overflow-hidden top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]`}
 >
       <svg className="hidden">
         <defs>
